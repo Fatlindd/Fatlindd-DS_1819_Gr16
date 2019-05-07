@@ -10,7 +10,8 @@ namespace Beaufort
             string key = "siguria";
 
             Console.WriteLine("Projekti Pare ne Siguri!\n");
-
+              
+             plaintext = plaintext.ToUpper();
 
             string ciphertext = Encrypt(plaintext.ToUpper(), key.ToUpper());
             Console.WriteLine("1. Plaintext :" + plaintext);
